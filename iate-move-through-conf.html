@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IATE Enrolment Confirmation</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        font-size: 14px;
+        text-align: justify;
+      }
+      h1,
+      h2,
+      h3,
+      h4 {
+        color: #0074bd;
+      }
+      .cta-button {
+        display: inline-block;
+        background-color: #0074bd;
+        color: white !important;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin: 10px 0;
+        transition: background-color 0.3s ease;
+      }
+      .cta-button:hover {
+        background-color: #005c94;
+      }
+      .signature {
+        margin-top: 30px;
+        font-style: italic;
+        color: #0074bd;
+      }
+      .signature a {
+        color: #0074bd;
+        text-decoration: none;
+      }
+      .logo {
+        width: 100px;
+        height: auto;
+        margin-top: 20px;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Dear {{278702603__First Name}},</p>
+
+    <p>Thanks for completing your enrolment form.</p>
+
+    <h3>Training Contract</h3>
+
+    <p>
+      Your training contract is linked below. Please take the time to read it
+      carefully before signing digitally. If you have any questions, please
+      contact the admissions team.
+    </p>
+
+    <p>
+      <a href="{{278702603__Contract signing URL}}" class="cta-button"
+        >AGREE TO YOUR TRAINING CONTRACT</a
+      >
+    </p>
+
+    <p>
+      Your academic officer,
+      <strong>{{278702603__Admin contact[]name}}</strong>, will be in touch
+      shortly to guide you further.
+    </p>
+
+    <p>Wishing you the best for {{278702603__Academic year}}.</p>
+
+    <div class="signature">
+      <p>Kind Regards,</p>
+      <p>{{278702603__Admin contact[]name}}</p>
+      <p>
+        The Institute for Arts in Therapy and Education<br />
+        1 Danes Yard, Stratford, London, E15 2QD<br />
+        <a href="http://www.artspsychotherapy.org">www.artspsychotherapy.org</a>
+        | {{278702603__Admin contact[]email}}<br />
+        020 7704 2534
+      </p>
+      <img
+        src="http://cdn.mcauto-images-production.sendgrid.net/c98155f1ceece01e/da0fe62d-65db-41ee-b2e2-1c5e9ec19a43/126x102.png"
+        alt="IATE Logo"
+        class="logo"
+      />
+    </div>
+  </body>
+</html>

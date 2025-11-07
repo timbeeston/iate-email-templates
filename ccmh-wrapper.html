@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CCMH Event Reminder</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 0;
+        font-size: 14px;
+      }
+      .container {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 0;
+      }
+      .logo-header {
+        text-align: center;
+        padding: 20px 0;
+      }
+      .banner {
+        background-color: #03a89e;
+        color: white;
+        padding: 30px;
+        text-align: left;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .banner h1 {
+        font-size: 28px;
+        margin: 0 0 10px 0;
+        color: white;
+      }
+      .banner h2 {
+        font-size: 20px;
+        margin: 0 0 15px 0;
+        font-weight: normal;
+        color: white;
+      }
+      .banner p {
+        margin: 0 0 5px 0;
+        color: white;
+      }
+      .banner ul {
+        margin: 10px 0;
+        padding-left: 20px;
+        color: white;
+      }
+      .play-button {
+        text-align: right;
+        margin-top: 20px;
+      }
+      .content {
+        padding: 30px;
+        box-sizing: border-box;
+        width: 100%;
+      }
+      .view-button {
+        background-color: #03a89e;
+        color: white;
+        text-decoration: none;
+        padding: 12px 40px;
+        text-align: center;
+        border-radius: 30px;
+        display: inline-block;
+        margin: 20px 0;
+        font-weight: bold;
+      }
+      .footer {
+        background-color: #03a89e;
+        color: white;
+        padding: 30px;
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .footer-text {
+        margin-bottom: 10px;
+      }
+      .social-icons {
+        margin-top: 10px;
+      }
+      .social-icons img {
+        margin: 0 5px;
+        width: 32px;
+        height: 32px;
+      }
+      a {
+        color: #03a89e;
+      }
+      .content ul {
+        padding-left: 20px;
+      }
+      .handouts a {
+        color: #00a19a;
+        text-decoration: underline;
+      }
+      .bottom-info {
+        font-size: 12px;
+        color: #666;
+        text-align: right;
+        padding: 10px 30px 30px 30px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .social-link {
+        display: inline-block;
+        margin: 0 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- CCMH Logo Header -->
+      <div class="logo-header">
+        <img
+          src="http://cdn.mcauto-images-production.sendgrid.net/c98155f1ceece01e/a18b620b-3a1d-41c0-815b-d098b72b5aed/241x134.png"
+          alt="CCMH Logo"
+          width="160"
+        />
+      </div>
+
+      <!-- Green Banner with Event Info -->
+      <div class="banner">
+        <h1>Your Event Reminder</h1>
+        <h2>{{290730424__heading}}</h2>
+      </div>
+
+      <!-- Main Content -->
+      <div class="content">{{290730425__output}}</div>
+
+      <!-- Green Footer with Contact Info -->
+      <div class="footer">
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          "
+        >
+          <div class="footer-text" style="text-align: left">
+            <p style="margin: 0; font-size: 20px">
+              <strong>Questions?</strong>
+            </p>
+            <p style="margin: 0">We're here to help</p>
+          </div>
+
+          <div class="social-icons" style="text-align: right; margin-top: 0">
+            <!-- Email icon -->
+            <a
+              href="mailto:info@childmentalhealthcentre.org"
+              class="social-link"
+              target="_blank"
+            >
+              <img
+                width="32"
+                height="32"
+                alt="Email icon"
+                src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/email-outline-light-40.png"
+              />
+            </a>
+
+            <!-- Facebook icon -->
+            <a
+              href="https://facebook.com/childmentalhealthcentre/"
+              class="social-link"
+              target="_blank"
+            >
+              <img
+                width="32"
+                height="32"
+                alt="Facebook icon"
+                src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/facebook-outline-light-40.png"
+              />
+            </a>
+
+            <!-- Twitter/X icon -->
+            <a
+              href="https://x.com/CCMH_London"
+              class="social-link"
+              target="_blank"
+            >
+              <img
+                width="32"
+                height="32"
+                alt="Twitter icon"
+                src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/twitter-outline-light-40.png"
+              />
+            </a>
+
+            <!-- Instagram icon -->
+            <a
+              href="https://instagram.com/centreforchildmentalhealth"
+              class="social-link"
+              target="_blank"
+            >
+              <img
+                width="32"
+                height="32"
+                alt="Instagram icon"
+                src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/instagram-outline-light-40.png"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright Info -->
+      <div class="bottom-info">
+        <p>
+          Copyright © 2025 The Centre for Child Mental Health. All rights
+          reserved.
+        </p>
+        <p>
+          Want to change how you receive these emails?<br />
+          You can <a href="#">update your preferences</a> or
+          <a href="#">unsubscribe</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

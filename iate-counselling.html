@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Template</title>
+    <style>
+      /* Base styles */
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 0;
+        font-size: 14px;
+        text-align: justify;
+      }
+
+      .email-container {
+        padding: 0;
+      }
+
+      /* Logo area */
+      .logo-container {
+        text-align: center;
+        padding: 20px;
+      }
+
+      .logo {
+        max-width: 150px;
+        height: auto;
+      }
+
+      /* Header box */
+      .header-box {
+        background-color: #0074bd;
+        padding: 22px;
+        color: #ffffff;
+        margin-bottom: 30px;
+      }
+
+      .header-box h1 {
+        color: #ffffff;
+        margin: 0;
+        font-size: 28px;
+        text-align: left;
+      }
+
+      .header-box p {
+        margin: 10px 0 0 0;
+        font-size: 16px;
+        color: #ffffff;
+      }
+
+      .header-box ul {
+        margin: 20px 0 0 0;
+        padding-left: 20px;
+        color: #ffffff;
+      }
+
+      .header-box li {
+        margin-bottom: 10px;
+      }
+
+      /* Content area */
+      .content {
+        padding: 0 20px;
+      }
+
+      /* Headings - Using Template 1 style with Template 2 color */
+      h2,
+      h3,
+      h4 {
+        color: #0074bd;
+        text-align: left;
+      }
+
+      /* Format all h2 elements with underline like Template 1 */
+      h2 {
+        text-align: left;
+        padding: 15px 0;
+        margin: 30px 0 20px 0;
+        border-bottom: 1px solid #0074bd;
+        font-size: 22px;
+        color: #0074bd;
+        font-weight: 600;
+      }
+
+      /* Highlight box for important information */
+      .highlight-box {
+        background-color: #e6f3ff;
+        padding: 15px;
+        margin: 20px 0;
+      }
+
+      .highlight-box ul {
+        margin: 0;
+        padding-left: 20px;
+      }
+
+      /* Lists - Fixed to prevent double bullets */
+      ul,
+      ol {
+        text-align: justify;
+        margin: 15px 0;
+        padding-left: 20px;
+      }
+
+      /* Ensure single bullet style and proper spacing */
+      ul li {
+        list-style-type: disc;
+        list-style-position: outside;
+        margin-bottom: 8px;
+        text-align: justify;
+        padding-left: 0;
+      }
+
+      /* Remove any nested list styling that might cause double bullets */
+      ul ul li {
+        list-style-type: circle;
+        margin-bottom: 5px;
+      }
+
+      /* Prevent any pseudo-element bullets */
+      ul li::before {
+        content: none !important;
+      }
+
+      /* Ordered lists */
+      ol li {
+        list-style-type: decimal;
+        list-style-position: outside;
+        margin-bottom: 8px;
+        text-align: justify;
+        padding-left: 0;
+      }
+
+      /* Call to action buttons */
+      .cta-button {
+        display: inline-block;
+        background-color: #0074bd;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin: 10px 0;
+        transition: background-color 0.3s ease;
+      }
+
+      .cta-button:hover {
+        background-color: #005c94;
+      }
+
+      /* Footer */
+      .footer {
+        background-color: #0074bd;
+        padding: 30px;
+        color: #ffffff;
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .footer-text {
+        text-align: left;
+      }
+
+      .footer-text p {
+        margin: 0;
+      }
+
+      .social-icons {
+        text-align: right;
+      }
+
+      .social-link {
+        margin-left: 8px;
+        text-decoration: none;
+      }
+
+      .social-link img {
+        width: 32px;
+        height: 32px;
+      }
+
+      /* Bottom info section */
+      .bottom-info {
+        padding: 15px 20px;
+        font-size: 12px;
+        color: #666;
+        text-align: right;
+      }
+
+      .bottom-info p {
+        margin: 5px 0;
+      }
+
+      .bottom-info a {
+        color: #0074bd;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-container">
+      <!-- Centered logo -->
+      <div class="logo-container">
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/iate-org.appspot.com/o/downloads%2FIATE-logo?alt=media"
+          alt="IATE Logo"
+          class="logo"
+        />
+      </div>
+
+      <!-- Header box with title (can also include subtitle and bullets) -->
+      <div class="header-box">
+        <h1>Your IATE Assessment Result</h1>
+        <p>We're pleased to share the outcome of your recent assessment</p>
+        <ul>
+          <li>Assessment completed on: 15th January 2025</li>
+          <li>Programme: MA Art Psychotherapy</li>
+          <li>Decision: Conditional Offer</li>
+        </ul>
+      </div>
+
+      <!-- Main content -->
+      <div class="content">
+        <!-- Example of greeting paragraph -->
+        <p>Dear Jane Applicant,</p>
+
+        <p>
+          Thank you for attending your assessment day with us. We were impressed
+          by your engagement and the thoughtful responses you provided during
+          the interview process.
+        </p>
+
+        <!-- Example of H2 heading (now with blue underline like Template 1) -->
+        <h2>Your Assessment Outcome</h2>
+
+        <p>
+          Following careful consideration by our admissions panel, we are
+          delighted to offer you a conditional place on the MA Art Psychotherapy
+          programme, commencing in September 2025.
+        </p>
+
+        <!-- Example of Highlight Box -->
+        <div class="highlight-box">
+          <strong>Your conditions of offer:</strong>
+          <ul>
+            <li>
+              Completion of Level 4 qualification in counselling or equivalent
+            </li>
+            <li>Submission of two professional references</li>
+            <li>Enhanced DBS check clearance</li>
+            <li>Occupational health clearance</li>
+          </ul>
+        </div>
+
+        <!-- Example of H2 heading with blue underline -->
+        <h2>Next Steps</h2>
+
+        <p>
+          To secure your place, please complete the following actions by 31st
+          March 2025:
+        </p>
+
+        <!-- Example of ordered list -->
+        <ol>
+          <li>Accept your offer via the student portal</li>
+          <li>Pay your deposit of £500 (deductible from tuition fees)</li>
+          <li>Submit all required documentation</li>
+          <li>Complete the pre-course reading list</li>
+        </ol>
+
+        <!-- Example of CTA Button -->
+        <p>
+          <a
+            href="https://www.artspsychotherapy.org/student-portal"
+            class="cta-button"
+            >ACCESS STUDENT PORTAL</a
+          >
+        </p>
+
+        <!-- Example of H3 subheading (blue, no underline) -->
+        <h3>Important Information</h3>
+
+        <p>
+          Please note that your place is conditional upon meeting all the
+          requirements listed above. Failure to meet these conditions by the
+          specified deadline may result in your offer being withdrawn.
+        </p>
+
+        <!-- Example of H2 heading with blue underline -->
+        <h2>Programme Details</h2>
+
+        <!-- Example of unordered list -->
+        <ul>
+          <li><strong>Programme start date:</strong> 15th September 2025</li>
+          <li><strong>Orientation week:</strong> 8th-12th September 2025</li>
+          <li><strong>Duration:</strong> 2 years full-time</li>
+          <li>
+            <strong>Location:</strong> IATE, 1 Dane Yard, Stratford, London
+          </li>
+        </ul>
+
+        <!-- Example of H2 heading with blue underline -->
+        <h2>Financial Information</h2>
+
+        <p>
+          The total tuition fee for the programme is £18,000 per year. Payment
+          plans are available, and we encourage you to explore funding options
+          including:
+        </p>
+
+        <ul>
+          <li>Postgraduate loans (up to £12,471 available)</li>
+          <li>Employer sponsorship schemes</li>
+          <li>IATE bursaries and scholarships (limited availability)</li>
+          <li>Charitable trusts and grants</li>
+        </ul>
+
+        <!-- Example of another highlight box -->
+        <div class="highlight-box">
+          <p>
+            <strong>Early Bird Discount:</strong> Pay your first year's fees in
+            full by 30th June 2025 and receive a 5% discount (£900 saving).
+          </p>
+        </div>
+
+        <!-- Example of H3 subheading (blue, no underline) -->
+        <h3>Questions or Support?</h3>
+
+        <p>
+          If you have any questions about your offer, the programme, or the
+          enrollment process, please don't hesitate to contact our admissions
+          team at
+          <a href="mailto:admissions@artspsychotherapy.org"
+            >admissions@artspsychotherapy.org</a
+          >
+          or call us on 020 7704 2534.
+        </p>
+
+        <p>
+          We look forward to welcoming you to IATE and supporting you on your
+          journey to becoming an art psychotherapist.
+        </p>
+
+        <p><strong>Warm regards,</strong></p>
+        <p>The IATE Admissions Team</p>
+      </div>
+
+      <!-- Footer with social media icons -->
+      <div class="footer">
+        <div class="footer-text">
+          <p style="font-size: 24px"><strong>Questions?</strong></p>
+          <p style="font-size: 16px">We're here to help</p>
+        </div>
+
+        <div class="social-icons">
+          <!-- Email icon -->
+          <a href="mailto:info@iate.uk" class="social-link" target="_blank">
+            <img
+              width="32"
+              height="32"
+              alt="Email icon"
+              src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/email-outline-light-40.png"
+            />
+          </a>
+
+          <!-- Facebook icon -->
+          <a
+            href="https://www.facebook.com/InstituteForArt"
+            class="social-link"
+            target="_blank"
+          >
+            <img
+              width="32"
+              height="32"
+              alt="Facebook icon"
+              src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/facebook-outline-light-40.png"
+            />
+          </a>
+
+          <!-- Instagram icon -->
+          <a
+            href="https://www.instagram.com/instituteforarts/"
+            class="social-link"
+            target="_blank"
+          >
+            <img
+              width="32"
+              height="32"
+              alt="Instagram icon"
+              src="https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v3/instagram-outline-light-40.png"
+            />
+          </a>
+        </div>
+      </div>
+
+      <!-- Copyright Info -->
+      <div class="bottom-info">
+        <p>
+          Copyright © 2025 The Institute for Arts in Therapy and Education. All
+          rights reserved.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

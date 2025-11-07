@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CCMH Email Template</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        font-size: 13px;
+      }
+      .header {
+        text-align: center;
+        margin-bottom: 30px;
+        background-color: #f5f5f5;
+        padding: 15px;
+      }
+      h1,
+      h2,
+      h3,
+      h4 {
+        color: #62b5b0;
+      }
+      .step {
+        margin-bottom: 30px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 2px;
+      }
+      .highlight-box {
+        background-color: #e6f7f6;
+        border: 1px solid #62b5b0;
+        padding: 15px;
+        margin: 20px 0;
+        border-radius: 2px;
+      }
+      .cta-button {
+        display: inline-block;
+        background-color: #62b5b0;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 2px;
+        margin-top: 10px;
+      }
+      .logo {
+        width: 200px;
+        height: auto;
+        margin-top: 20px;
+      }
+      .section-divider {
+        height: 2px;
+        background-color: #62b5b0;
+        margin: 20px 0;
+      }
+      .footer {
+        background-color: #62b5b0;
+        padding: 20px;
+        text-align: center;
+        color: #ffffff;
+        border-radius: 2px;
+        margin-top: 30px;
+      }
+      .footer p {
+        margin: 0;
+        font-size: 12px;
+      }
+      .footer .org-name {
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div style="font-size: 12px; color: #666; margin-top: 10px">
+        020 7354 2913 | 1 DANES YARD, SUGAR HOUSE ISLAND, STRATFORD, LONDON, E15
+        2QD
+      </div>
+    </div>
+
+    <h1>Your Webinar Recording Is Ready</h1>
+
+    <p>Dear {{First Name}},</p>
+
+    <p>
+      Thank you for your interest in our webinar on {{Date}}. We hope you found
+      the session informative and engaging.
+    </p>
+
+    <div class="step">
+      <h3>Access Your Recording</h3>
+      <p>
+        Whether you attended live or missed the session, you can now review the
+        content at your convenience. Simply click the button below and use the
+        password provided to access the recording.
+      </p>
+      <a href="{{Vidyard Video URL}}" class="cta-button">VIEW RECORDING</a>
+    </div>
+
+    <div class="highlight-box">
+      <h3>Access Information</h3>
+      <p><strong>Your password:</strong> {{Vidyard Viewing Password}}</p>
+      <p>
+        <strong>Access period:</strong> Your recording will be available for 14
+        days from today.
+      </p>
+      <p>
+        <strong>Please note:</strong> This content is exclusively for your
+        personal use as a registered participant. Our system tracks viewing
+        activity, and we will be notified if content is shared. Should this
+        occur, your access to this and future recordings will be revoked. Those
+        interested in accessing our webinars can register for upcoming sessions
+        on our website.
+      </p>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <p>
+      We hope you find the recording valuable. Should you have any questions or
+      need further assistance, please don't hesitate to contact our team.
+    </p>
+
+    <p>We look forward to seeing you at our future events!</p>
+
+    <p>
+      Warm regards,<br />
+      The CCMH Team
+    </p>
+
+    <div class="footer">
+      <p class="org-name">The Centre for Child Mental Health</p>
+      <p>In partnership with the Institute for Arts in Therapy and Education</p>
+      <p style="margin-top: 10px">
+        020 7354 2913 | info@childmentalhealthcentre.org
+      </p>
+    </div>
+  </body>
+</html>
