@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Essential Counselling Skills Training at IATE</title>
+    <title>IATE Staff Membership Renewal</title>
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -146,14 +146,13 @@
       <h1>Your IATE Membership Renewal</h1>
     </div>
 
-    <p>Dear {{269831331__firstName}},</p>
+    <p>Dear {{=gives['331961466']['fields']['First Name']}},</p>
 
     <p>
       We're writing to remind you about your upcoming IATE membership renewal.
       Your current membership expires on
       <strong
-        >{{=gives['_GEN_1762487386965']['fields']['Expiration Date
-        Annual']}}</strong
+        >{{=gives['331961466']['fields']['Expiration date formatted']}}</strong
       >.
     </p>
 
@@ -194,7 +193,9 @@
       requirements. You can complete your audit here:
     </p>
 
-    <a href="{{269831331__cpdAuditUrl}}" class="iate-button"
+    <a
+      href="{{=gives['331961466']['fields']['CPD Audit URL']}}"
+      class="iate-button"
       >COMPLETE YOUR CPD AUDIT HERE</a
     >
 

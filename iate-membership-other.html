@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Essential Counselling Skills Training at IATE</title>
+    <title>IATE Membership Renewal</title>
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -146,11 +146,12 @@
       <h1>Your IATE Membership Renewal</h1>
     </div>
 
-    <p>Dear {{269831331__firstName}},</p>
+    <p>Dear {{=gives['331961466']['fields']['First Name']}},</p>
 
     <p>
       We're writing to remind you about your upcoming IATE membership renewal.
-      Your current membership expires on {{269831331__expirationDate}}
+      Your current membership expires on
+      {{=gives['331961466']['fields']['Expiration date formatted']}}
     </p>
 
     <p>Your membership continues to provide:</p>
@@ -171,35 +172,15 @@
     <p>
       Your membership will renew automatically. Your registered card will be
       debited
-      <strong>£{{=gives['_GEN_1762487386965']['fields']['Fee paid']}} </strong>
+      <strong>£{{=gives['331961466']['fields']['Membership Fee']}}</strong>
       on
       <strong
-        >{{=gives['_GEN_1762487386965']['fields']['Expiration Date
-        Annual']}}</strong
+        >{{=gives['331961466']['fields']['Rebilling date formatted']}}</strong
       >. If you need to update your payment details, you can do so in the
       membership portal below.
     </p>
     <a href="https://app.joinit.com/o/iate/members" class="iate-button"
       >MEMBERSHIP PORTAL</a
-    >
-
-    <div class="part-heading">
-      <h2>CPD Audit</h2>
-    </div>
-
-    <p>
-      As you continue your professional journey with IATE, please remember to
-      complete your annual CPD audit, which is essential for finalising your
-      membership. This audit ensures you're meeting our practice standards and
-      <a
-        href="https://artspsychotherapy.org/images/downloads/CPD-policyDecember-2018.pdf"
-        >CPD policy</a
-      >
-      requirements. You can complete your audit here:
-    </p>
-
-    <a href="{{269831331__cpdAuditUrl}}" class="iate-button"
-      >COMPLETE YOUR CPD AUDIT HERE</a
     >
 
     <div class="ccmh-heading">
