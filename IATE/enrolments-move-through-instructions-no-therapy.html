@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IATE Enrolment Information</title>
+    <style>
+      /* Base styles */
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        font-size: 14px;
+        text-align: justify;
+      }
+
+      /* Header */
+      .header {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      /* Headings */
+      h1,
+      h2,
+      h3,
+      h4 {
+        color: #0074bd;
+      }
+
+      /* Highlight box for important information */
+      .highlight-box {
+        background-color: #e6f3ff;
+        padding: 15px;
+        margin: 20px 0;
+      }
+
+      .highlight-box ul {
+        margin: 0;
+        padding-left: 20px;
+      }
+
+      /* Lists */
+      ul,
+      ol {
+        text-align: left;
+        margin: 15px 0;
+      }
+
+      /* Call to action buttons */
+      .cta-button {
+        display: inline-block;
+        background-color: #0074bd;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        margin: 10px 0;
+        transition: background-color 0.3s ease;
+      }
+
+      .cta-button:hover {
+        background-color: #005c94;
+      }
+
+      /* Signature section */
+      .signature {
+        margin-top: 30px;
+        font-style: italic;
+        color: #0074bd;
+      }
+
+      .signature a {
+        color: #0074bd;
+        text-decoration: none;
+      }
+
+      /* Logo */
+      .logo {
+        width: 150px;
+        height: auto;
+        margin-top: 20px;
+        display: block;
+      }
+
+      /* Section headings */
+      .part-heading {
+        text-align: left;
+        padding: 15px 0;
+        margin: 30px 0 20px 0;
+        border-bottom: 1px solid #0074bd;
+      }
+
+      .part-heading h2 {
+        margin: 0;
+        font-size: 22px;
+        color: #0074bd;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <h1>IATE Enrolment Information</h1>
+    </div>
+
+    <!-- Main content -->
+    <p>Dear {{301754798__fields__First Name}},</p>
+
+    <p>
+      Enrolment for year {{301754798__fields__Year of study}} of the
+      {{301754798__fields__Course name}} is now open. Please see below for full
+      details on enrolling and don't hesitate to get in touch should you have
+      any questions.
+    </p>
+
+    <p>
+      <strong
+        >You must complete the enrolment procedure outlined below, even if you
+        have paid your fees via our Early Bird scheme.</strong
+      >
+    </p>
+
+    <div class="part-heading">
+      <h2>Fees</h2>
+    </div>
+
+    <p>The fees for {{301754798__fields__Academic year}} are as follows:</p>
+    <ul>
+      <li>Tuition fees: <strong>£{{301754798__fields__Total fees}}</strong></li>
+      <li>
+        University course supplement:
+        <strong
+          >£{{301754798__fields__University supplement}} (optional)</strong
+        >
+      </li>
+    </ul>
+
+    <p>
+      Before completing enrolment, please familiarise yourself with our payment
+      & withdrawal terms.
+    </p>
+    <p>
+      <a
+        href="https://firebasestorage.googleapis.com/v0/b/iate-org.appspot.com/o/downloads%2FCourse-Payment-Terms-and-Conditions?alt=media"
+        class="cta-button"
+        target="_blank"
+        >PAYMENT TERMS AND CONDITIONS</a
+      >
+    </p>
+
+    <div class="part-heading">
+      <h2>Enrolment Procedure</h2>
+    </div>
+
+    <p>
+      The deadline for completing enrolment for the coming academic year is
+      <strong>{{301754798__fields__Enrolment deadline}}</strong>
+    </p>
+
+    <h3>Step 1: Complete your enrolment form</h3>
+    <p>
+      Please complete your enrolment form via the link below. If you have not
+      already paid via the Early Bird scheme, you will need to pay your
+      <strong>£{{301754798__fields__Fee deposit}}</strong> deposit at this
+      stage. If you are enrolling on one of our UEL validated programmes, you
+      will need to pay your university supplement to complete enrolment.
+    </p>
+    <p>
+      <a
+        href="{{301754798__fields__Move through URL}}"
+        class="cta-button"
+        target="_blank"
+        >ENROL HERE</a
+      >
+    </p>
+
+    <h3>Step 2: Sign your training contract</h3>
+    <p>
+      Having completed your enrolment form you will receive your training
+      contract via email. Please read it carefully before signing digitally.
+      Please remember to check your junk if you don't see your contract.
+    </p>
+
+    <h3>Step 3: Pay the balance of your fees</h3>
+    <p>
+      If you have not already paid your fees via our Early Bird scheme, you will
+      be asked to elect how you wish to pay the balance of your fees. Choose to
+      settle in full or opt for instalments, with automatic Direct Debit
+      required should you choose the latter. Detailed instructions for setting
+      up your Direct Debit will be sent once you complete your enrolment form.
+    </p>
+
+    <div class="part-heading">
+      <h2>Finally</h2>
+    </div>
+
+    <p>
+      We look forward to supporting you for another year. Please don't hesitate
+      to get in touch if you have any questions.
+    </p>
+
+    <!-- Signature section with IATE details -->
+    <div class="signature">
+      <p>Kind Regards,</p>
+      <p>
+        {{301754798__fields__Admin contact[]name}}<br />
+        Academic Officer<br />
+        {{301754798__fields__Course name}}<br />
+        The Institute for Arts in Therapy and Education<br />
+        1 Danes Yard, Stratford, London, E15 2QD<br />
+        <a href="http://www.artspsychotherapy.org">www.artspsychotherapy.org</a
+        ><br />
+        020 7704 2534 | {{301754798__fields__Admin contact[]email}}
+      </p>
+      <div class="logo-container">
+        <img
+          src="http://cdn.mcauto-images-production.sendgrid.net/c98155f1ceece01e/e1795978-aaf9-477c-8f02-a105aa99a977/283x228.png"
+          alt="IATE Logo"
+          class="logo"
+        />
+      </div>
+    </div>
+  </body>
+</html>
