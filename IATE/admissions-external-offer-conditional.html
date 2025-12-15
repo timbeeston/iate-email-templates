@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Application to Study at IATE</title>
+    <style>
+      /* Base styles */
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        font-size: 14px;
+        text-align: justify;
+      }
+
+      /* Header */
+      .header {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      /* Headings */
+      h1,
+      h2,
+      h3,
+      h4 {
+        color: #0074bd;
+      }
+
+      h3 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+
+      /* Highlight box for important information */
+      .highlight-box {
+        background-color: #e6f3ff;
+        padding: 15px;
+        margin: 20px 0;
+      }
+
+      .highlight-box p {
+        margin: 10px 0;
+      }
+
+      .highlight-box h3 {
+        margin-top: 0;
+      }
+
+      .highlight-box ul {
+        margin: 0;
+        padding-left: 20px;
+      }
+
+      /* Lists */
+      ul,
+      ol {
+        text-align: left;
+        margin: 15px 0;
+      }
+
+      /* Links */
+      a {
+        color: #0074bd;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      /* Call to action buttons */
+      .cta-button {
+        display: inline-block;
+        background-color: #0074bd;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        margin: 10px 0;
+        transition: background-color 0.3s ease;
+      }
+
+      .cta-button:hover {
+        background-color: #005c94;
+        text-decoration: none;
+      }
+
+      /* Signature section */
+      .signature {
+        margin-top: 30px;
+        font-style: italic;
+        color: #0074bd;
+      }
+
+      .signature a {
+        color: #0074bd;
+        text-decoration: none;
+      }
+
+      /* Logo */
+      .logo {
+        width: 150px;
+        height: auto;
+        margin-top: 20px;
+        display: block;
+      }
+
+      /* Section headings */
+      .part-heading {
+        text-align: left;
+        padding: 15px 0;
+        margin: 30px 0 20px 0;
+        border-bottom: 1px solid #0074bd;
+      }
+
+      .part-heading h2 {
+        margin: 0;
+        font-size: 22px;
+        color: #0074bd;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <h1>Your Application to Study at IATE</h1>
+    </div>
+
+    <!-- Main content -->
+    <p>Dear {{251638210__First name}},</p>
+
+    <p>
+      Thank you for attending the recent Taster event at IATE. After careful
+      consideration of your application by our admissions team, we are delighted
+      to offer you the following place:
+    </p>
+
+    <p><strong>{{251638210__Course[]name}} (Conditional)</strong></p>
+
+    <p>
+      Please accept our sincerest congratulations. We understand you will have
+      many questions, so please review the attached course information. If you
+      have further queries, don't hesitate to contact us on 020 7704 2534.
+    </p>
+
+    <div class="part-heading">
+      <h2>The Enrolment Process</h2>
+    </div>
+
+    <h3>Step 1 - Enrolment Form and Deposit</h3>
+    <p>
+      Please complete your enrolment form (link below) which includes paying
+      your <strong>£960</strong> deposit. Please familiarise yourself with our
+      <a
+        href="https://firebasestorage.googleapis.com/v0/b/iate-org.appspot.com/o/downloads%2FCourse-Payment-Terms-and-Conditions?alt=media"
+        >payment terms and conditions</a
+      >.
+    </p>
+
+    <h3>Step 2 - Training Contract</h3>
+    <p>
+      Upon completion of your enrolment form, you will receive your training
+      contract via email. Check your junk/spam folder if you don't see it.
+      Carefully review and electronically sign the contract, and a copy will be
+      sent to you for your records.
+    </p>
+
+    <h3>Step 3 - Tuition Fee Balance</h3>
+    <p>
+      As part of the enrolment form, you will be asked to select how you wish to
+      pay the balance of your fees. Choose to settle the balance in full or opt
+      for instalments, with automatic Direct Debit required should you choose
+      the latter. Detailed instructions for setting up your Direct Debit will be
+      included when we send your invoice. Find a breakdown of course fees in the
+      fees section on our website.
+    </p>
+
+    <div class="highlight-box">
+      <h3>Pay Early and Save</h3>
+      <p>
+        Should you pay your tuition fee balance in full before
+        <strong>{{251638210__Early bird deadline (external)}}</strong>, you can
+        save <strong>£{{251638210__External early bird amount}}</strong>.
+      </p>
+      <p>
+        To take up this offer, select "Pay in full" when prompted to elect how
+        you wish to pay your fees during the enrolment process and we will send
+        full details.
+      </p>
+    </div>
+
+    <h3>Step 4 - Complete the Conditions of Your Offer</h3>
+    <p>
+      As you have received a conditional offer, you will need to complete the
+      following before the course start date:
+    </p>
+
+    <div class="highlight-box">
+      <p>{{251638210__Conditions}}</p>
+    </div>
+
+    <p>
+      <a href="{{251638210__Enrolment form URL}}" class="cta-button"
+        >ENROL NOW</a
+      >
+    </p>
+
+    <div class="part-heading">
+      <h2>Enrolment Deadline</h2>
+    </div>
+
+    <p>
+      You will probably be aware that the training you have chosen is very
+      popular and we are now nearing capacity. To ensure you have a place for
+      this year, you will need to pay your deposit by
+      <strong>{{251638210__Taster event deposit deadline}}</strong>, thereby
+      accepting your offer and securing your place.
+    </p>
+
+    <p>
+      Unfortunately, all enrolment confirmations received after this date will
+      be automatically transferred to our waiting list.
+    </p>
+
+    <div class="part-heading">
+      <h2>Important Information</h2>
+    </div>
+
+    <h3>Time Commitment</h3>
+    <p>{{251638210__Time commitment}}</p>
+
+    <h3>Therapy Requirements</h3>
+    <p>{{251638210__Therapy requirements}}</p>
+
+    <h3>University Validated Option</h3>
+    <p>{{251638210__University Route Details}}</p>
+
+    <div class="part-heading">
+      <h2>Finally</h2>
+    </div>
+
+    <p>
+      Once again, congratulations on your offer. We hope to see you at IATE for
+      the coming academic year.
+    </p>
+
+    <!-- Signature section with IATE details -->
+    <div class="signature">
+      <p>Kind regards,</p>
+      <p>
+        The Admissions Team<br />
+        The Institute for Arts in Therapy and Education<br />
+        1 Dane Yard, Stratford, London, E15 2QD<br />
+        <a href="http://www.artspsychotherapy.org">www.artspsychotherapy.org</a
+        ><br />
+        020 7704 2534
+      </p>
+      <div class="logo-container">
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/iate-org.appspot.com/o/downloads%2FIATE-logo?alt=media"
+          alt="IATE Logo"
+          class="logo"
+        />
+      </div>
+    </div>
+  </body>
+</html>
