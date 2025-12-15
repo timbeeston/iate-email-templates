@@ -5,81 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IATE Taster Day Information</title>
     <style>
+      /* Base styles */
       body {
         font-family: Arial, sans-serif;
         line-height: 1.6;
         color: #333;
-        max-width: 800px;
+        max-width: 600px;
         margin: 0 auto;
         padding: 20px;
         font-size: 14px;
         text-align: justify;
       }
+
+      /* Header */
       .header {
         text-align: center;
         margin-bottom: 30px;
       }
+
+      /* Headings */
       h1,
       h2,
       h3,
       h4 {
         color: #0074bd;
       }
-      .step {
-        margin-bottom: 30px;
-        padding: 20px;
-        background-color: #f9f9f9;
-        border-radius: 5px;
-      }
+
+      /* Highlight box for important information */
       .highlight-box {
         background-color: #e6f3ff;
-        border: 1px solid #0074bd;
         padding: 15px;
         margin: 20px 0;
-        border-radius: 5px;
       }
+
+      .highlight-box ul {
+        margin: 0;
+        padding-left: 20px;
+      }
+
+      /* Lists */
+      ul,
+      ol {
+        text-align: left;
+        margin: 15px 0;
+      }
+
+      /* Call to action buttons */
       .cta-button {
         display: inline-block;
         background-color: #0074bd;
         color: white;
         padding: 10px 20px;
         text-decoration: none;
-        border-radius: 5px;
         margin: 10px 0;
+        transition: background-color 0.3s ease;
       }
+
       .cta-button:hover {
         background-color: #005c94;
       }
+
+      /* Signature section */
       .signature {
         margin-top: 30px;
         font-style: italic;
         color: #0074bd;
       }
+
       .signature a {
         color: #0074bd;
+        text-decoration: none;
       }
+
+      /* Logo */
       .logo {
         width: 150px;
         height: auto;
         margin-top: 20px;
+        display: block;
       }
-      .section-divider {
-        height: 2px;
-        background-color: #0074bd;
-        margin: 30px 0;
-      }
+
+      /* Section headings */
       .part-heading {
         text-align: left;
         padding: 15px 0;
         margin: 30px 0 20px 0;
         border-bottom: 1px solid #0074bd;
       }
+
       .part-heading h2 {
         margin: 0;
         font-size: 22px;
         color: #0074bd;
         font-weight: 600;
       }
+
+      /* Map image */
       .map-image {
         width: 100%;
         max-width: 600px;
@@ -90,10 +111,12 @@
     </style>
   </head>
   <body>
+    <!-- Header -->
     <div class="header">
       <h1>Taster Day Information</h1>
     </div>
 
+    <!-- Main content -->
     <p>Dear {{223948611__fields__First name}},</p>
 
     <p>
@@ -125,9 +148,11 @@
       receive this before the event. Please follow the link below to submit
       yours.
     </p>
-    <a href="{{233968553__fields__Application form URL}}" class="cta-button"
-      >APPLICATION FORM</a
-    >
+    <p>
+      <a href="{{233968553__fields__Application form URL}}" class="cta-button"
+        >APPLICATION FORM</a
+      >
+    </p>
 
     <div class="part-heading">
       <h2>Access Requirements</h2>
@@ -186,15 +211,16 @@
       have any questions.
     </p>
 
+    <!-- Signature section with IATE details -->
     <div class="signature">
       <p>Kind regards,</p>
       <p>
         Laura Dukes<br />
-        Student Recruitment and Admissions Officer<br />
+        IATE Admissions<br />
         The Institute for Arts in Therapy and Education<br />
         1 Danes Yard, Stratford, London, E15 2QD<br />
         <a href="http://www.artspsychotherapy.org">www.artspsychotherapy.org</a>
-        | <a href="mailto:may@iate.uk">may@iate.uk</a><br />
+        | <a href="mailto:laura@iate.uk">laura@iate.uk</a><br />
         020 7704 2534
       </p>
       <div class="logo-container">
