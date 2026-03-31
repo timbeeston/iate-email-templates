@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IATE Exit Award Enrolment Information</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        font-size: 14px;
+        text-align: justify;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: #0074bd;
+      }
+
+      .step {
+        margin-bottom: 30px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+      }
+
+      .cta-button {
+        display: inline-block;
+        background-color: #0074bd;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin: 10px 0;
+        transition: background-color 0.3s ease;
+      }
+
+      .cta-button:hover {
+        background-color: #005c94;
+      }
+
+      .signature {
+        margin-top: 30px;
+        font-style: italic;
+        color: #0074bd;
+      }
+
+      .signature a {
+        color: #0074bd;
+        text-decoration: none;
+      }
+
+      .logo-container {
+        margin-top: 20px;
+      }
+
+      .logo {
+        width: 150px;
+        height: auto;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>IATE Exit Award Enrolment Information</h1>
+    </div>
+
+    <p>Dear {{301754798__fields__First Name}},</p>
+
+    <p>
+      We hope you have had an enjoyable summer. Enrolments are open for the
+      {{301754798__fields__Academic year}} academic year. As you are completing
+      a retake this year for the
+      <strong>{{301754798__fields__Course name}}</strong> you will need to
+      complete enrolment.
+    </p>
+
+    <div class="step">
+      <h2>Enrolment procedure</h2>
+
+      <h3>1. Complete your enrolment form & pay your year out fee</h3>
+      <p>
+        Please complete your enrolment form via the link below. If you have not
+        already done so, you will need to pay your
+        <strong> £{{301754798__fields__Fees}}</strong> year out fee at this
+        stage.
+      </p>
+      <a
+        href="{{301754798__fields__Move through URL}}"
+        class="cta-button"
+        target="_blank"
+        >ENROL HERE</a
+      >
+
+      <h3>2. Sign your training contract</h3>
+      <p>
+        Having completed your enrolment form you will receive your training
+        contract via email. Please read it carefully before signing digitally.
+        Please remember to check your junk if you don't see your contract.
+      </p>
+    </div>
+
+    <h2>Finally</h2>
+    <p>
+      We look forward to supporting you for another year. Please don't hesitate
+      to get in touch if you have any questions.
+    </p>
+
+    <div class="signature">
+      <p>Kind regards,</p>
+      <p>
+        {{301754798__fields__Admin contact[]name}}<br />
+        Academic Officer<br />
+        {{301754798__fields__Course name}}<br />
+        The Institute for Arts in Therapy and Education<br />
+        1 Danes Yard, Stratford, London, E15 2QL<br />
+        <a href="http://www.artspsychotherapy.org">www.artspsychotherapy.org</a
+        ><br />
+        020 7704 2534 | {{301754798__fields__Admin contact[]email}}
+      </p>
+
+      <div class="logo-container">
+        <img
+          src="http://cdn.mcauto-images-production.sendgrid.net/c98155f1ceece01e/e1795978-aaf9-477c-8f02-a105aa99a977/283x228.png"
+          alt="IATE Logo"
+          class="logo"
+        />
+      </div>
+    </div>
+  </body>
+</html>

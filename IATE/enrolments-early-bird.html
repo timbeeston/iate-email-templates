@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IATE Library Access Information</title>
+    <title>IATE Early Bird Payment Offer</title>
     <style>
       /* Base styles */
       body {
@@ -50,16 +50,6 @@
         margin: 15px 0;
       }
 
-      /* Links */
-      a {
-        color: #0074bd;
-        text-decoration: none;
-      }
-
-      a:hover {
-        text-decoration: underline;
-      }
-
       /* Call to action buttons */
       .cta-button {
         display: inline-block;
@@ -67,13 +57,13 @@
         color: white;
         padding: 10px 20px;
         text-decoration: none;
+        border-radius: 5px;
         margin: 10px 0;
         transition: background-color 0.3s ease;
       }
 
       .cta-button:hover {
         background-color: #005c94;
-        text-decoration: none;
       }
 
       /* Signature section */
@@ -115,72 +105,86 @@
   <body>
     <!-- Header -->
     <div class="header">
-      <h1>IATE Library Access Information</h1>
+      <h1>IATE Early Bird Payment Offer</h1>
     </div>
 
     <!-- Main content -->
-    <p>Dear {{260061745__First name}},</p>
-
+    <p>Dear {{251908956__First Name}},</p>
     <p>
-      You have registered for the IATE Liberty/Softlink system. To log in,
-      please follow the instructions below.
+      We hope this email finds you well. As we prepare for the new academic
+      year, we wanted to inform you about our Early Bird payment option.
     </p>
 
-    <div class="part-heading">
-      <h2>Accessing the Library System</h2>
+    <div class="highlight-box">
+      <h2>Early Bird Payment Option</h2>
+      <p>
+        You have the opportunity to save £{{251908956__Early Bird amount}} on
+        your fees by paying in full by 5 pm on {{251908956__Early Bird date}}.
+      </p>
+      <p>
+        <strong>Discounted balance:</strong> £{{251908956__Discounted balance}}
+      </p>
     </div>
 
-    <p><strong>Please go to the following link:</strong></p>
+    <div class="part-heading">
+      <h2>Payment Terms and Conditions</h2>
+    </div>
+    <p>
+      Before paying, please familiarise yourself with our payment terms and
+      conditions:
+    </p>
     <p>
       <a
-        href="https://artspsychotherapy.libertyasp.co.uk/library/libraryHome.do"
+        href="https://www.artspsychotherapy.org/images/downloads/Payment_terms.pdf"
         class="cta-button"
-        >IATE LIBRARY SYSTEM</a
+        target="_blank"
+        >PAYMENT TERMS AND CONDITIONS</a
       >
     </p>
 
-    <p>Use the following credentials to log in:</p>
-    <ul>
-      <li><strong>Username:</strong> {{260061745__Student number}}</li>
-      <li><strong>Password:</strong> {{260061745__Library password}}</li>
-    </ul>
-
     <div class="part-heading">
-      <h2>Training and Instructions</h2>
+      <h2>How to Pay</h2>
+    </div>
+    <p>
+      To benefit from our Early Bird offer, please make payment of your fee
+      balance, less your £{{251908956__Early Bird amount}} discount, to the
+      account below:
+    </p>
+
+    <div class="highlight-box">
+      <p>
+        <strong>Discounted balance:</strong> £{{251908956__Discounted balance}}
+      </p>
+      <p>
+        <strong>Account name:</strong> Therapy &amp; Education Limited<br />
+        <strong>Sort code:</strong> 20-46-60<br />
+        <strong>Account #:</strong> 40184136
+      </p>
+      <p>Please use your full name as the payment reference.</p>
     </div>
 
+    <p>We'll send a receipt once we've received your payment.</p>
     <p>
-      For training and written instructions on how to use the catalogue and
-      access e-journals and e-books, please visit the IATE Moodle site:
+      If you have any questions about this option or need any assistance, please
+      don't hesitate to contact us.
     </p>
-
     <p>
-      <a
-        href="https://iate.moodle.tituslearning.com/course/view.php?id=51"
-        class="cta-button"
-        >IATE MOODLE SITE</a
-      >
-    </p>
-
-    <p>You have been added as a participant to this course.</p>
-
-    <p>
-      If you have any issues, please contact
-      <a href="mailto:library@iate.uk">library@iate.uk</a>.
+      We look forward to welcoming you to IATE for the upcoming academic year.
     </p>
 
     <!-- Signature section with IATE details -->
     <div class="signature">
-      <p>Best regards,</p>
+      <p>Kind regards,</p>
       <p>
-        The IATE Library Team<br />
+        The Admissions Team<br />
         The Institute for Arts in Therapy and Education<br />
-        1 Danes Yard, Stratford, London, E15 2QL<br />
+        1 Dane Yard, Stratford, London, E15 2QD<br />
         <a href="http://www.artspsychotherapy.org">www.artspsychotherapy.org</a
         ><br />
         020 7704 2534
       </p>
       <div class="logo-container">
+        <!-- TODO: Replace with current IATE logo URL (e.g. Firebase-hosted) -->
         <img
           src="https://firebasestorage.googleapis.com/v0/b/iate-org.appspot.com/o/downloads%2FIATE-logo?alt=media"
           alt="IATE Logo"

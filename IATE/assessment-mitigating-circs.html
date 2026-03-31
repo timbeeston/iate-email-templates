@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IATE Email Template</title>
+    <style>
+        body {
+            font-family: Calibri, Arial, sans-serif;
+            font-size: 11pt;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .email-body {
+            margin-bottom: 30px;
+        }
+        .signature {
+            margin-top: 30px;
+            font-style: italic;
+            color: #0074bd;
+        }
+        .signature a {
+            color: #0074bd;
+        }
+        .logo-container {
+            margin-top: 10px;
+        }
+        .logo {
+            width: 100px;
+            height: auto;
+            vertical-align: bottom;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-body">
+        <p>Hi {{259636864__Course director first name}},</p>
+        
+        <strong>{{259636864__First name}} {{259636864__Last name}}</strong> ({{259636864__Email}} | {{259636864__Phone}}) has submitted an authorised absence request.<br>
+        
+        <p>If {{259636864__First name}} has submitted any supporting documentation, you will find it attached.<br>
+        
+        <p><a href="{{=gives["259636864"]["Review request form URL"]}}">REVIEW SUBMISSION</a>
+        
+    </div>
+    
+    <div class="signature">
+        <p>Kind Regards,</p>
+        
+        <p>The Institute for Arts in Therapy and Education<br>
+        1 Dane Yard, Stratford, London, E15 2QL<br>
+        <a href="http://www.artspsychotherapy.org">www.artspsychotherapy.org</a><br>
+        020 7704 2534</p>
+        <div class="logo-container">
+            <img src="http://cdn.mcauto-images-production.sendgrid.net/c98155f1ceece01e/e1795978-aaf9-477c-8f02-a105aa99a977/283x228.png" alt="IATE Logo" class="logo">
+        </div>
+    </div>
+</body>
+</html>

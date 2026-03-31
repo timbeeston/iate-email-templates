@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DipCC Placement Introduction</title>
     <style>
       /* Base styles */
       body {
@@ -29,6 +28,24 @@
       h3,
       h4 {
         color: #0074bd;
+      }
+      
+      /* Format all h1 elements like the header */
+      h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 26px;
+      }
+      
+      /* Format all h2 elements like part-heading */
+      h2 {
+        text-align: left;
+        padding: 15px 0;
+        margin: 30px 0 20px 0;
+        border-bottom: 1px solid #0074bd;
+        font-size: 22px;
+        color: #0074bd;
+        font-weight: 600;
       }
 
       /* Highlight box for important information */
@@ -86,7 +103,7 @@
         display: block;
       }
 
-      /* Section headings */
+      /* Section headings - keeping this for backward compatibility */
       .part-heading {
         text-align: left;
         padding: 15px 0;
@@ -100,25 +117,31 @@
         color: #0074bd;
         font-weight: 600;
       }
+
+      hr {
+       border: none;
+       border-top: 1px solid #ccc;
+       margin: 20px 0;
+      }
+
+
     </style>
   </head>
   <body>
+    {{16.Body}}
     <!-- Signature section with IATE details -->
     <div class="signature">
       <p>Kind regards,</p>
-      <p>
-        {{256901484__Placement coordinator[]name}}<br />
-        Placement Coordinator <br />
-        {{256901484__Course name}}<br />
+      <p> </p>
+        {{16.`From Name`}}<br />
         The Institute for Arts in Therapy and Education<br />
-        1 Dane Yard, Stratford, London, E15 2QD<br />
+        1 Danes Yard, Stratford, London, E15 2QD<br />
         <a href="http://www.artspsychotherapy.org">www.artspsychotherapy.org</a>
-        | DIPCCplacements@iate.uk <br />
+        | {{16.`From Email`}}<br />
         020 7704 2534
       </p>
       <div class="logo-container">
-        <img
-          src="http://cdn.mcauto-images-production.sendgrid.net/c98155f1ceece01e/563ae2e5-4eb2-4cd6-abb1-9faca4c5d5e3/283x228.png"
+        <img src="https://firebasestorage.googleapis.com/v0/b/iate-org.appspot.com/o/downloads%2FIATE-logo?alt=media"
           alt="IATE Logo"
           class="logo"
         />

@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IATE Library Access Information</title>
     <style>
       /* Base styles */
       body {
@@ -30,6 +29,24 @@
       h4 {
         color: #0074bd;
       }
+      
+      /* Format all h1 elements like the header */
+      h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 26px;
+      }
+      
+      /* Format all h2 elements like part-heading */
+      h2 {
+        text-align: left;
+        padding: 15px 0;
+        margin: 30px 0 20px 0;
+        border-bottom: 1px solid #0074bd;
+        font-size: 22px;
+        color: #0074bd;
+        font-weight: 600;
+      }
 
       /* Highlight box for important information */
       .highlight-box {
@@ -50,16 +67,6 @@
         margin: 15px 0;
       }
 
-      /* Links */
-      a {
-        color: #0074bd;
-        text-decoration: none;
-      }
-
-      a:hover {
-        text-decoration: underline;
-      }
-
       /* Call to action buttons */
       .cta-button {
         display: inline-block;
@@ -67,13 +74,13 @@
         color: white;
         padding: 10px 20px;
         text-decoration: none;
+        border-radius: 5px;
         margin: 10px 0;
         transition: background-color 0.3s ease;
       }
 
       .cta-button:hover {
         background-color: #005c94;
-        text-decoration: none;
       }
 
       /* Signature section */
@@ -96,7 +103,7 @@
         display: block;
       }
 
-      /* Section headings */
+      /* Section headings - keeping this for backward compatibility */
       .part-heading {
         text-align: left;
         padding: 15px 0;
@@ -110,79 +117,31 @@
         color: #0074bd;
         font-weight: 600;
       }
+
+      hr {
+       border: none;
+       border-top: 1px solid #ccc;
+       margin: 20px 0;
+      }
+
+
     </style>
   </head>
   <body>
-    <!-- Header -->
-    <div class="header">
-      <h1>IATE Library Access Information</h1>
-    </div>
-
-    <!-- Main content -->
-    <p>Dear {{260061745__First name}},</p>
-
-    <p>
-      You have registered for the IATE Liberty/Softlink system. To log in,
-      please follow the instructions below.
-    </p>
-
-    <div class="part-heading">
-      <h2>Accessing the Library System</h2>
-    </div>
-
-    <p><strong>Please go to the following link:</strong></p>
-    <p>
-      <a
-        href="https://artspsychotherapy.libertyasp.co.uk/library/libraryHome.do"
-        class="cta-button"
-        >IATE LIBRARY SYSTEM</a
-      >
-    </p>
-
-    <p>Use the following credentials to log in:</p>
-    <ul>
-      <li><strong>Username:</strong> {{260061745__Student number}}</li>
-      <li><strong>Password:</strong> {{260061745__Library password}}</li>
-    </ul>
-
-    <div class="part-heading">
-      <h2>Training and Instructions</h2>
-    </div>
-
-    <p>
-      For training and written instructions on how to use the catalogue and
-      access e-journals and e-books, please visit the IATE Moodle site:
-    </p>
-
-    <p>
-      <a
-        href="https://iate.moodle.tituslearning.com/course/view.php?id=51"
-        class="cta-button"
-        >IATE MOODLE SITE</a
-      >
-    </p>
-
-    <p>You have been added as a participant to this course.</p>
-
-    <p>
-      If you have any issues, please contact
-      <a href="mailto:library@iate.uk">library@iate.uk</a>.
-    </p>
-
+    {{16.Body}}
     <!-- Signature section with IATE details -->
     <div class="signature">
-      <p>Best regards,</p>
-      <p>
-        The IATE Library Team<br />
+      <p>Kind regards,</p>
+      <p> </p>
+        {{16.`From Name`}}<br />
         The Institute for Arts in Therapy and Education<br />
         1 Danes Yard, Stratford, London, E15 2QL<br />
-        <a href="http://www.artspsychotherapy.org">www.artspsychotherapy.org</a
-        ><br />
+        <a href="http://www.artspsychotherapy.org">www.artspsychotherapy.org</a>
+        | {{16.`From Email`}}<br />
         020 7704 2534
       </p>
       <div class="logo-container">
-        <img
-          src="https://firebasestorage.googleapis.com/v0/b/iate-org.appspot.com/o/downloads%2FIATE-logo?alt=media"
+        <img src="https://firebasestorage.googleapis.com/v0/b/iate-org.appspot.com/o/downloads%2FIATE-logo?alt=media"
           alt="IATE Logo"
           class="logo"
         />
